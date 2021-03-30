@@ -111,3 +111,45 @@ form button{
 form button:hover{
     background-color: #2fb86e;
 }
+
+/* ====================== Itens de Coleta ==========================*/
+.items-grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grids li{
+    background-color: var(--color-bg);
+    list-style: none;
+    border: 2px solid var(--color-bg);
+    border-radius:8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: space-between;
+    text-align: center;
+    cursor: pointer
+}
+
+.items-grids li span{
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    color: var(--color-letter);
+}
+
+.items-grids li.selected{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grids li img,
+.items-grids li span{
+    pointer-events: none;
+}
