@@ -23,6 +23,11 @@
     #page-home main{
         align-items: center;
     }    
+
+    /*========= sourch-results ===========*/
+    #page-sourch-results .cards{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width: 1700px){
