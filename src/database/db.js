@@ -1,5 +1,5 @@
 //Importar a dependência do sqlite 3
-const sqlite3 = require('sqlite3').verbose
+const sqlite3 = require('sqlite3').verbose()
 
 //Criar objeto que irá fazer operações no banco de dados
 const db =  new sqlite3.Database("./src/database/database.db")
@@ -34,7 +34,27 @@ db.serialize( () => {
                 items
             ) VALUES ( ?,?,?,?,?,?,? )
         `
-    db.run(query)
+
+    const values = [
+        "Imagem",
+        "Coletoria",
+        "Guilherme Gemballa, Jardim América",
+        "Número 260",
+        "Santa Catarina",
+        "Rio do Sul",
+        "Resíduos Eletrônicos, Lâmpadas"
+    ]
+
+    function afterInsertData(err){
+        if (err){
+            return console.log(err)
+        }
+
+        console.log("Cadastrado com sucesso")
+        console.log(this)
+    }
+
+    db.run(query, values, afterInsertData)
 
     //3.Consultar os dados da tabela
 
