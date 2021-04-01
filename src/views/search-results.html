@@ -24,15 +24,15 @@
                 {% for place in places %}
                 
                     <div class="card">
-                        <img src="{{place:image}}" alt="{{place:name}}">
-                        <h1>{{place:name}}</h1>
-                        <h3>{{place:items}}</h3>
+                        <img src="{{place.image}}" alt="{{place.name}}">
+                        <h1>{{place.name}}</h1>
+                        <h3>{{place.items}}</h3>
                         <p>
-                            {{place:city}}, {{place:state}} 
+                            {{place.city}}, {{place.state}} 
                             </br>
-                            {{place:address}}
+                            {{place.address}}
                             </br>
-                            {{place:address2}}
+                            {{place.address2}}
                         </p>
                     </div>
 
