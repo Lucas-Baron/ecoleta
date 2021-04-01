@@ -75,7 +75,7 @@ server.post("/savepoint", (req, res) => {
 
     db.run(query, values, afterInsertData)
 
-    return res.send('create-point.html', {saved:true})
+    return res.render('create-point.html', {saved:true})
 })
 
 
