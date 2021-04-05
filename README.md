@@ -1,4 +1,4 @@
-<h3> Ecoleta é um projeto Open Source desenvolvido na semana Next Level Week (1.0) da <a href= "https://rocketseat.com.br/" >Rocketseat</a> utilizando HTML, CSS, Javascript, Node Js.</h3>
+<h3> Ecoleta é um projeto Open Source desenvolvido na semana Next Level Week Starter da <a href= "https://rocketseat.com.br/" >Rocketseat</a> utilizando HTML, CSS, Javascript, Node Js.</h3>
 
 ![Ecoleta-Home](https://user-images.githubusercontent.com/66525064/113577084-15322280-95f7-11eb-884c-1e0efd3a1980.png)
 
